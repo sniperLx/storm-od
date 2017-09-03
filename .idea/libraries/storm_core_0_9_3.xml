@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="storm-core-0.9.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/storm/storm-core/0.9.3/storm-core-0.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/storm-core0.9.3-maven.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/od-framework.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/od/GetPathChainBolt.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/od/ODCalcBolt.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/od/SavaODBolt.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/od/SaveONPEIDBolt.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/od_drpc/TopologyRemoteDRPC.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/topology/TopologyRemote.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/cn/edu/cqu/topology/TopologyRemoteKafka.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/trident_od/TridentWordCount.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/Random1.java" charset="UTF-8" />
+  </component>
+</project>

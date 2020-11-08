@@ -10,13 +10,8 @@
     c. 拓扑od-kafka-save(TopologySaveODKafKa)会将kafka集群中的od回写到表single_car_od，因此选择作用在node1上，执行写操作。
     d. 而node1上的/home/liuxu/downloads/kafka/KafkaProducer.class 用来将表eid中的数据写入到kafka集群中的主题od_week,因为数据量
     不大，此处我仍选择读取node1上的od_week这个数据库，执行读操作。
-    e. 帐号： mysql: liuxu/password_mysql 和 root/password_root。
 
-##2. 账户密码
-
-    我在node1-node8上创建了用户liuxu/password_liuxu
-
-##3. 集群信息
+## 2. 集群信息
 
     a. 我在node1-node8上搭建了storm集群:
         a.1 node1 == nimbus ui
@@ -30,7 +25,7 @@
         然后访问 node1_IP:9000
     d. 整个Storm集群的状态可以访问node1_IP:8081看到。
 
-##4. 项目打包及发布到storm集群
+## 3. 项目打包及发布到storm集群
 
     a. 整个项目是采用maven来管理依赖的，因此我们可以采用命令：mvn package -Dmaven.test.skip=true
        来将项目代码打包为jar文件。在执行上面代码之前，我们需要对依赖配置文件pom.xml作一些修改。
@@ -38,23 +33,23 @@
        因为在storm集群环境已经提供了storm-core的依赖包，因此我们不必将其和我们代码一起打包，所以
        在执行上面打包命令前，需要注释掉II部分的代码。
 
-```
-I.  <dependency>
-        <groupId>org.apache.storm</groupId>
-        <artifactId>storm-core</artifactId>
-        <version>0.9.3</version>
-        <scope>provided</scope>
-    </dependency>
-
-    <!--when package or install, comment on below dependency-->
-II. <dependency>
-        <groupId>org.apache.storm</groupId>
-        <artifactId>storm-core</artifactId>
-        <version>0.9.3</version>
-        <scope>compile</scope>
-    </dependency>
-
-```
+       
+        I.  <dependency>
+                <groupId>org.apache.storm</groupId>
+                <artifactId>storm-core</artifactId>
+                <version>0.9.3</version>
+                <scope>provided</scope>
+            </dependency>
+        
+            <!--when package or install, comment on below dependency-->
+        II. <dependency>
+                <groupId>org.apache.storm</groupId>
+                <artifactId>storm-core</artifactId>
+                <version>0.9.3</version>
+                <scope>compile</scope>
+            </dependency>
+        
+ 
     b. 远程发布包到storm集群
        storm的cookbook中教我们执行topology的方式一般是登录到nimbus节点，采用命令行的方式提交：
        $storm jar xxx.jar qualified-name.class  self-defined-topology-name

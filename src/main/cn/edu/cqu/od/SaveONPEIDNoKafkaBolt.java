@@ -43,7 +43,7 @@ public class SaveONPEIDNoKafkaBolt implements IRichBolt {
         final String host_port = "10.0.0.2:3307";
         final String database = "od_week";
         final String user = "lx";
-        final String password = "password_mysql";
+        final String password = "xxxx";
         final String url = "jdbc:mysql://" + host_port + "/" + database;
         try {
             Class.forName("com.mysql.jdbc.Driver");

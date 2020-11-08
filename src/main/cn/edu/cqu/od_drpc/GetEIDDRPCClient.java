@@ -33,7 +33,7 @@ public class GetEIDDRPCClient {
     final String host_port = "node1_IP:3306";
     final String database = "od_week";
     final String user = "lx";
-    final String password = "password_mysql";
+    final String password = "xxxx";
     final String url = "jdbc:mysql://" + host_port + "/" + database;
 
     private void getEid() {

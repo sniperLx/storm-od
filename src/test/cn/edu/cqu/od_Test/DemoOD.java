@@ -17,7 +17,7 @@ public class DemoOD {
         final String host_port = "222.198.138.113:3306";
         final String database = "od_week";
         final String user = "lx";
-        final String password = "3124769";
+        final String password = "xxxx";
         final String url = "jdbc:mysql://" + host_port + "/" + database;
         try {
             Class.forName("com.mysql.jdbc.Driver");

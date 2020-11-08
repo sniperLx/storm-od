@@ -32,7 +32,7 @@ public class SaveODNoKafkaBolt extends BaseRichBolt {
         String host_port = "10.0.0.2:3307";           //remote node1
         String database = "od_week";
         String user = "lx";
-        String password = "password_mysql";
+        String password = "xxxx";
         String url = "jdbc:mysql://" + host_port + "/" + database;
         try {
             Class.forName("com.mysql.jdbc.Driver");

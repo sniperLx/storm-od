@@ -92,7 +92,7 @@ public class TopologyRemoteKafka implements Serializable {
         conf.setMaxSpoutPending(500);
         conf.setMessageTimeoutSecs(30);
         conf.put("kafka.broker.properties", kafkaBoltConfig());
-        conf.put("topic", "od-for-week");        // ≈‰÷√KafkaBolt…˙≥…µƒtopic
+        conf.put("topic", "od-for-week");
 
         /**
          * Define storm topology
@@ -123,7 +123,7 @@ public class TopologyRemoteKafka implements Serializable {
 
             Nimbus.Client client = NimbusClient.getConfiguredClient(stormConf).getClient();
             //jar file's path
-            String inputJar = ".\\target\\storm-od-1.0-SNAPSHOT-jar-with-dependencies.jar";
+            String inputJar = "./target/storm-od-1.0-SNAPSHOT-jar-with-dependencies.jar";
             NimbusClient nimbusClient = new NimbusClient(stormConf, nimbus_host, 6627); //thrift port
 
             //submit jar file with StormSubmitter to nimbus

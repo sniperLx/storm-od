@@ -26,7 +26,7 @@ public class CosumeBolt implements IRichBolt {
         String host_port = "10.0.0.1:3306";           //remote node1
         String database = "od_week";
         String user = "lx";
-        String password = "3124769";
+        String password = "xxxx";
         String url = "jdbc:mysql://" + host_port + "/" + database;
         try {
             Class.forName("com.mysql.jdbc.Driver");
